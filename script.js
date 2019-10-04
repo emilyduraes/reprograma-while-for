@@ -133,9 +133,97 @@ Lojas Quase Dois - Tabela de preços
 
 /* O Departamento Estadual de Meteorologia lhe contratou para desenvolver um programa que leia as um conjunto indeterminado de temperaturas, e informe ao final a menor e a maior temperaturas informadas, bem como a média das temperaturas. */
 
-let temperaturas = [21,34,15];
-let maiorTemperatura = Math.max(...temperaturas);
-let menorTemperatura = Math.min(...temperaturas);
-let media = temperaturas.reduce((a,b) => a + b, 0) / temperaturas.length;
+// let temperaturas = [21,34,15];
+// let maiorTemperatura = Math.max(...temperaturas);
+// let menorTemperatura = Math.min(...temperaturas);
+// let media = temperaturas.reduce((a,b) => a + b, 0) / temperaturas.length;
 
-console.log('Maior temperatura: '+ maiorTemperatura + '; menor temperatura: ' + menorTemperatura + '; e a média: ');
+// console.log('Maior temperatura: '+ maiorTemperatura + '; menor temperatura: ' + menorTemperatura + '; e a média: ' + media);
+
+/* Em uma competição de ginástica, cada atleta recebe votos de sete jurados. A melhor e a pior nota são eliminadas. A sua nota fica sendo a média dos votos restantes. Você deve fazer um programa que receba o nome do ginasta e as notas dos sete jurados (um array) alcançadas pelo atleta em sua apresentação e depois informe a sua média, conforme a descrição acima informada. As notas não são informados ordenadas. Um exemplo de saída do programa deve ser conforme o exemplo abaixo:
+
+Resultado final:
+
+Atleta: Aparecido Parente
+
+Melhor nota: 9.9
+
+Pior nota: 7.5
+
+Média: 9.04  */
+
+// votos = [];
+// melhorNota = Math.max(...votos); 
+// piorNota = Math.min(...votos);
+
+/* Para calcular o fatorial de um número, você multiplica todos os números menores que ele até 1. Por exemplo, 10! = 10 * 9 * 8 * 7 * 6 * 5 * 4 * 3 * 2 * 1. Faça um algoritmo que dado um número calcule o fatorial do mesmo */
+
+// let x = 5;
+
+// for(let i = x-1; i >= 1; i--){
+//     let resultado = x*i;
+//     x = resultado; 
+//     console.log(resultado);
+// }
+
+// Faça uma função que receba uma quantidade x e retorne um array com x números randomicos.
+
+// let arr = [];
+
+// function retornarArray(x){
+    
+//     for(let i = 0; i < x; i++){
+//         let valor = Math.floor((Math.random() * 100) + 1);
+//         arr.push(valor);
+//     }
+//     return arr;
+// }
+
+// console.log(retornarArray(3));
+
+//Faça um algoritmo que sortei cara (0) ou coroa (1) n vezes. E no fim mostre quantas vezes deu cara e quantas coroa.
+
+// function sortearMoeda(x){
+
+//     let resultadoCara = 0;
+//     let resultadoCoroa = 0;
+
+//     for (let i = 0; i < x; i++){
+
+//         let sorteio = Math.floor(Math.random() * 2);
+        
+//         if (sorteio === 0){
+//             resultadoCara++;
+//         } else if (sorteio === 1){
+//             resultadoCoroa++;
+//         }
+//     }
+//     return "Você sorteou 'Cara': " + resultadoCara + " vezes e 'Coroa': " + resultadoCoroa + ' vezes.'
+// }
+// console.log(sortearMoeda(10));
+
+
+/* Escreva um algoritmo que printe o seguinte padrão no console:
+
+*******
+
+******
+
+*****
+
+****
+
+***
+
+**
+
+* */
+
+// for (let j = 0; j < 7; j++) { 
+//     let asteriscos = ""
+//     for (let i = 0; i < (7 - j); i++) { 
+//         asteriscos += "*"
+//     }
+//     console.log(asteriscos)
+// }
+
