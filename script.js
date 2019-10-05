@@ -171,7 +171,7 @@ Média: 9.04  */
 // let arr = [];
 
 // function retornarArray(x){
-    
+
 //     for(let i = 0; i < x; i++){
 //         let valor = Math.floor((Math.random() * 100) + 1);
 //         arr.push(valor);
@@ -191,7 +191,7 @@ Média: 9.04  */
 //     for (let i = 0; i < x; i++){
 
 //         let sorteio = Math.floor(Math.random() * 2);
-        
+
 //         if (sorteio === 0){
 //             resultadoCara++;
 //         } else if (sorteio === 1){
@@ -226,4 +226,43 @@ Média: 9.04  */
 //     }
 //     console.log(asteriscos)
 // }
+
+/* Escreva um algoritmo que printe o seguinte padrão no console:
+
+1
+
+22
+
+333
+
+4444
+
+55555 */
+
+//shift+alt+f = identação automática
+
+// for (let i = 1; i <= 5; i++) {
+//     let linha = '';
+//     for (let j = 1; j <= i; j++) {
+//         linha += i
+//     }
+//     console.log(linha)
+// }
+
+//  Pangrama é uma palavra que possui todas as letras do alfabeto. Faça um algoritmo que verifique se uma palavra é um pangrama ou não.
+
+function verificarPangrama(frase) {
+    let pangrama = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "x", "w", "y", "z"];
+    frase.split("");
+    frase = frase.toLowerCase();
+    for (let i = 0; i < pangrama.length; i++) {
+        if (frase.indexOf(pangrama[i]) < 0) {
+            return false;
+        } else {
+            return true;
+        }
+    }
+}
+console.log(verificarPangrama("Jane quer LP, fax, CD, giz, TV e bom whisky."));
+
 
